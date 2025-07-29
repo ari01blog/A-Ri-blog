@@ -102,7 +102,40 @@ header p {
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
-    }
+      
+      @media (max-width: 600px) {
+  header {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .posts {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .post {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+}
   </style>
 </head>
 <body>
