@@ -193,5 +193,20 @@ header p {
   <footer>
     <p>© 2025 A Ri. All rights reserved.</p>
   </footer>
+  <script>
+  const posts = document.querySelectorAll('.post');
+
+  const reveal = () => {
+    posts.forEach(post => {
+      const rect = post.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        post.style.opacity = 1;
+      }
+    });
+  };
+
+  window.addEventListener('scroll', reveal);
+  window.addEventListener('load', reveal);
+  </script>
 </body>
 </html>
